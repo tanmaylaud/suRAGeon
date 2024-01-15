@@ -8,8 +8,7 @@ from llama_index import StorageContext, ServiceContext, load_index_from_storage,
 from llama_index.embeddings import HuggingFaceEmbedding
 import os
 
-TOGETHER_API_KEY = "4125f82e2f0b0da68f5fcdc10766779393a5fc818b25e3872fb41b167f696c7e"
-
+TOGETHER_API_KEY = os.env['TOGETHER_API_KEY']
 
 llm = Together(
     model="mistralai/Mistral-7B-Instruct-v0.2",

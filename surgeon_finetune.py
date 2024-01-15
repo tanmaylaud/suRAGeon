@@ -8,7 +8,7 @@ from llama_index import StorageContext, ServiceContext, load_index_from_storage,
 from llama_index.embeddings import HuggingFaceEmbedding
 import os
 
-TOGETHER_API_KEY = "df8d81058bb7142b03cf790ec619e0cde4add36dd1b731ec1eb56239f6219a46"
+TOGETHER_API_KEY = os.env['TOGETHER_API_KEY']
 
 
 llm = Together(
